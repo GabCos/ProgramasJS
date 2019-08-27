@@ -143,10 +143,50 @@ function exe7 () {
         var salario = Number(document.getElementById("salario").value);
 novo = salario + salario*30/100 
 
-    if (salario > 500){
+    if (salario >  500){
         alert ("O aumento não serve para sua catergoria")
     }
     else{
         alert ("Seu salário passa a ser " + novo)
+    }
+}
+
+function exe22 () {
+            //Recurar os dados
+    var Idade = Number(document.getElementById("Idade").value);
+    var peso = Number(document.getElementById("peso").value);
+
+    if (Idade > 50) {
+         if (peso > 90){
+        alert ("Categoria risco 1")
+        }    
+        else if ((peso > 60) && (peso < 90)) {
+        alert ("Categoria risco 2")
+        }
+        else {
+        alert ("Categoria risco 3")
+        }
+    }
+    else if ((Idade > 20) && (Idade < 50)) {
+        if (peso > 90) {
+        alert ("Categoria risco 4 ")
+        }
+        else if ((peso > 60) && (peso < 90)) {
+        alert ("Categoria risco 5 ")
+        }
+        else {
+        alert ("Categoria risco 6")
+        }
+    }
+    else if (Idade < 20) {
+        if (peso > 90) {
+        alert ("Categoria risco 7 ")
+        }
+        else if ((peso > 60) && (peso < 90)) {
+        alert ("Categoria risco 8 ")
+        }
+        else {
+        alert ("Categoria risco 9")
+        }
     }
 }
